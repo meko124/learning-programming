@@ -4,6 +4,11 @@ public class CharaTypeData {
 	
 	public static void main(String[] args) {
 		
-		System.out.print("hello boy");
+		char e = 'E';
+		char k = 'K';
+		char o = 'O';
+		System.out.print(e);
+		System.out.print(k);
+		System.out.print(o);
 	}
 }

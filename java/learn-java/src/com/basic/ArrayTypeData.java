@@ -24,16 +24,17 @@ public class ArrayTypeData {
 			{"Joko"}
 	};
 	
-		System.out.println(stringArray[0]);
-		System.out.println(stringArray[1]);
-		System.out.println(stringArray[2]);
-		System.out.println(Arrays.toString(arrayInt));
-		System.out.println(Arrays.toString(arrayLong));
-		System.out.println("+++++++++++");
-		System.out.println(members[0][1]);
-		System.out.println(Arrays.deepToString(members[2]));
+		System.out.println("stringArray [0]: " + stringArray[0]);
+		System.out.println("stringArray [1]: " + stringArray[1]);
+		System.out.println("stringArray [2]: " + stringArray[2]);
+
+		System.out.println("array int: " + Arrays.toString(arrayInt));
+		System.out.println("array long: " + Arrays.toString(arrayLong));
+
+		System.out.println("members [0][1]: " + members[0][1]);
+		System.out.println("members [2]: " + Arrays.deepToString(members[2]));
 		
 		stringArray[1] = "Ana";
-		System.out.println(stringArray[1]);
+		System.out.println("change stringArray [1]: " + stringArray[1]);
 	}
 }

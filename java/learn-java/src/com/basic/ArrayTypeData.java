@@ -17,14 +17,21 @@ public class ArrayTypeData {
 	
 	long[] arrayLong = {
 		10L,20L
-	};;
+	};
+	String[][] members = {
+		{"Eko","Alex"},
+		{"Ana","Siti","Maria"},
+			{"Joko"}
+	};
+	
 		System.out.println(stringArray[0]);
 		System.out.println(stringArray[1]);
 		System.out.println(stringArray[2]);
 		System.out.println(Arrays.toString(arrayInt));
 		System.out.println(Arrays.toString(arrayLong));
-		
-		
+		System.out.println("+++++++++++");
+		System.out.println(members[0][1]);
+		System.out.println(Arrays.deepToString(members[2]));
 		
 		stringArray[1] = "Ana";
 		System.out.println(stringArray[1]);

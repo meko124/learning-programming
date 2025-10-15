@@ -36,5 +36,17 @@ public class ArrayTypeData {
 		
 		stringArray[1] = "Ana";
 		System.out.println("change stringArray [1]: " + stringArray[1]);
+		
+		System.out.println("===i use loop array without ForEarch===");
+		
+		for(int i = 0; i < stringArray.length; i++) {
+			System.out.println(stringArray[i]);
+		}
+		
+		System.out.println("===i use loop array ForEarch===");
+		
+		for(String value : stringArray) {
+			System.out.println(value);
+		}
 	}
 }

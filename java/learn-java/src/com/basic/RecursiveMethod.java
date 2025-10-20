@@ -10,7 +10,8 @@ public class RecursiveMethod {
 	static int factorialLoop(int values) {
 		int result = 1;
 		for(int i = 1; i <= values; i++) {
-			result = result * i;//result *= i;
+			//result *= i;
+			result = result * i;
 		}
 		return result;
 	}

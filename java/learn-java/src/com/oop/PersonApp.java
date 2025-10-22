@@ -11,5 +11,12 @@ public class PersonApp {
 		person2.sayHello();
 		person3.sayHello();
 		person4.sayHello();
+		
+		var personTwo = new PersonTwo();
+		personTwo.age = 10;
+		personTwo.country = "Indonesian";
+		System.out.println(personTwo.age);
+		System.out.println(personTwo.country);
+		
 	}
 }

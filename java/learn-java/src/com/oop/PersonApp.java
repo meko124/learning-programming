@@ -2,15 +2,19 @@ package com.oop;
 
 public class PersonApp {
 	public static void main(String[] args) {
-		var person1 = new Person("Eko");
-		Person person2 = new Person("Siti");
+		
+		var person1 = new Person();
+		person1.name = "Eko";
+		person1.sayHello("Siti");
+		
+		Person person2 = new Person();
+		person2.name = "Joko";
+		person2.sayHello("Zahra");
+		
 		Person person3;
-		person3 = new Person("Budi");
-		Person person4 = new Person("Zahra");
-		person1.sayHello();
-		person2.sayHello();
-		person3.sayHello();
-		person4.sayHello();
+		person3 = new Person();
+	
+		
 		
 		var personTwo = new PersonTwo();
 		personTwo.age = 10;

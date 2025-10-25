@@ -10,6 +10,12 @@ class Person {
 		address = paramAddress;
 	}
 	
+	Person(String paramName){
+		this(paramName,null);
+	}
+	Person() {
+		this(null);
+	}
 	void sayHello(String param) {
 		System.out.println("Hello bro, " + name + " ok guys " + param);
 	} 

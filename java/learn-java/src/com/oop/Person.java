@@ -5,9 +5,9 @@ class Person {
 	int age;
 	String address;
 	
-	Person(String paramName, String paramAddress) {
-		name = paramName;
-		address = paramAddress;
+	Person(String name, String address) {
+		this.name = name;
+		this.address = address;
 	}
 	
 	Person(String paramName){

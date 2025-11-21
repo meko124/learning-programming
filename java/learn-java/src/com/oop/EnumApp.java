@@ -12,6 +12,14 @@ public class EnumApp {
 		System.out.println(customer.getLevel().getDescription());
 		
 		String levelName = Level.VIP.name();
-		System.out.println(levelName)
+		System.out.println(levelName);
+		
+		Level level = Level.valueOf("PREMIUM");
+		System.out.println(level);
+		
+		System.out.println("Print Level");
+		for(var prints : Level.values()) {
+			System.out.println(prints);
+		}
 	}
 }

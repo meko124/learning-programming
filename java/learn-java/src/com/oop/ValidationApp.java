@@ -14,5 +14,12 @@ public class ValidationApp {
 		 catch (NullPointerException exception) { 
 			System.out.println("Data is null: " + exception.getMessage());
 		}*/
+		finally {
+			System.out.println("Always On");
+		}
+		//this code is below have an error
+		LoginRequest loginRequestTwo = new LoginRequest(null, null);
+		CheckValidation.validateRuntime(loginRequestTwo);
+		System.out.println("Succes");
 	}
 }

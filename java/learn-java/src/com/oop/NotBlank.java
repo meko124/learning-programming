@@ -1,9 +1,9 @@
 package com.oop;
 
-import java.lang.Annotation.ElementType;
-import java.lang.Annotation.Retention;
-import java.lang.Annotation.RetentionPolicy;
-import java.lang.Annotation.Target;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

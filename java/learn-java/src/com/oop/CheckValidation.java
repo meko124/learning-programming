@@ -1,5 +1,7 @@
 package com.oop;
 
+// import java.lang.recflect.Field;
+
 public class CheckValidation {
 	public static void validate(LoginRequest loginRequest) throws ValidationException, NullPointerException {
 		if(loginRequest.username() == null) {
@@ -26,11 +28,11 @@ public class CheckValidation {
 	}
 	
 	public static void validationReflection(Object object) {
-		Class aClass = object.getClass();
-		Field[] fields = aClass.getDeclaredFields();
+		
+		Field[] fields = request.getClass().getDeclaredFields();
 		
 		for(var field : fields) {
-			field.setAccesible(true);
+			field.setAccessible(true);
 			if(field.getAnnotation(NotBlank.class) != null) {
 				//validated
 				try {
@@ -39,7 +41,7 @@ public class CheckValidation {
 						throw new BlankException("Field " + field.getName() + " is blank");
 					}
 				} catch(IllegalAccessException exception) {
-					System.out.println("Not can Access field " + getName());
+					System.out.println("Not can Access field " + field.getName());
 				}
 			}
 		}

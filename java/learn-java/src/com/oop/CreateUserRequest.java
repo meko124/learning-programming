@@ -1,7 +1,10 @@
 package com.oop;
 
 public class CreateUserRequest {
+	
+	@NotBlank
 	private String username;
+	@NotBlank
 	private String password;
 	
 	public String getUsername() {

@@ -1,0 +1,6 @@
+@echo off
+echo Compiling all Java files...
+javac -d out src\com\classes\*.java
+echo.
+echo Running program...
+java -cp out com.classes.StringBuilderApp
